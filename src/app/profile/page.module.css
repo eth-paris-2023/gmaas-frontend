@@ -1,0 +1,9 @@
+.profile_container {
+  height: fit-content;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(315deg, #160d26 0%, #1a214c 100%);
+}

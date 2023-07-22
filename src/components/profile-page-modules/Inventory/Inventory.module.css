@@ -1,0 +1,102 @@
+.Inventory_container {
+  height: fit-content;
+  min-height: 500px;
+  width: 1300px;
+  margin-top: 200px;
+  padding-bottom: 200px;
+}
+
+.Inventory_container .title {
+  height: 150px;
+  width: 100%;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28.8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.Inventory_container .title p {
+  margin-right: 15px;
+}
+.Inventory_container .title div {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 15px;
+}
+
+.Inventory_container .subTitle {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Inventory_Nft_container {
+  height: fit-content;
+  min-height: 430px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Inventory_Nft {
+  height: 440px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.Inventory_Nft_img {
+  height: 230px;
+  width: 230px;
+}
+.Inventory_Nft .data {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Inventory_Nft .data p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.Inventory_Nft .data p span {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.Inventory_Nft .data p span img {
+    height: 20px;
+    width: 20px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 1300px) {
+    .Inventory_container {
+        height: fit-content;
+        width: 90%;
+        margin-top: 200px;
+      }
+    
+}

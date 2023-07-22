@@ -102,11 +102,11 @@
   width: 21px;
 }
 .Footer_container .info p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
 }
 .Footer_container .info p span {
     color: rgba(255, 255, 255, 0.85);

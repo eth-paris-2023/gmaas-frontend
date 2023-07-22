@@ -9,6 +9,7 @@
 .Header_logo {
   height: fit-content;
   width: 240px;
+  cursor: pointer;
 }
 
 .Header_buttons_box {
@@ -56,4 +57,30 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header_buttons_box .connect_button p {
+  position: absolute;
+  top: 115%;
+  color: rgb(116, 39, 198);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+@media screen and (max-width : 1440px) {
+  .Header_container {
+    position: absolute;
+    height: 150px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
