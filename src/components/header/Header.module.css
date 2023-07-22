@@ -1,0 +1,59 @@
+.Header_container {
+  position: absolute;
+  height: 150px;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header_logo {
+  height: fit-content;
+  width: 240px;
+}
+
+.Header_buttons_box {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header_buttons_box .credit_button {
+  border-radius: 50px;
+  background: #c72f9a;
+  width: 183px;
+  height: 50px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Header_buttons_box .credit_button p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: -60%;
+  position: absolute;
+}
+.Header_buttons_box .connect_button {
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  width: 196px;
+  height: 48px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

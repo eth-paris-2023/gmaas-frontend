@@ -1,0 +1,126 @@
+.Banner_container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/image/banner.png");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.Banner_content {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Banner_content_prompt_box {
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.34);
+  width: 681px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Banner_content_prompt_box input {
+  height: 100%;
+  width: 60%;
+  padding-left: 5%;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+}
+.Banner_content_prompt_box input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+.Banner_content_prompt_box button {
+  border-radius: 50px;
+  background: rgba(199, 47, 154, 0.5);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 30%;
+  height: 100%;
+  transition: 0.2s ease-in-out;
+}
+.Banner_content_prompt_box button:hover {
+  background: rgba(126, 28, 97, 0.7);
+}
+
+.Banner_content_model_box {
+  height: 150px;
+  width: 681px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Banner_content_model_box .title {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Banner_content_model_box .container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Banner_content_model_box .container .model {
+  border-radius: 50px;
+  background: rgba(199, 47, 154, 0.2);
+  width: 140px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.Banner_content .info {
+  height: 70px;
+  width: 681px;
+  display: flex;
+}
+.Banner_content .info .icon {
+  height: 100%;
+  width: 27px;
+}
+.Banner_content .info .icon img {
+  height: 21px;
+  width: 21px;
+}
+.Banner_content .info p {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.Banner_content .info p span {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
