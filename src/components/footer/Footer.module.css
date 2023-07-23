@@ -15,6 +15,12 @@
   margin-top: 80px;
 }
 
+.Footer_buy_hint_container {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
 .Footer_buy_box {
   height: 50px;
   width: fit-content;
@@ -90,8 +96,6 @@
   width: 681px;
   display: flex;
   margin-top: 20px;
-  position: relative;
-  left: 5.8%;
 }
 .Footer_container .info .icon {
   height: 100%;
