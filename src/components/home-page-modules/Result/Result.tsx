@@ -18,7 +18,11 @@ const models = [
   },
 ];
 
-export default function Result() {
+export default function Result({
+  nodeRef,
+}: {
+  nodeRef: React.RefObject<HTMLElement>;
+}) {
   const [selectedModel, setSelectedModel] = useState<
     | {
         name: string;
@@ -27,7 +31,7 @@ export default function Result() {
     | undefined
   >();
   return (
-    <section className={styles.Result_container}>
+    <section ref={nodeRef} className={styles.Result_container}>
       <div className={styles.Result_container_line1} />
       <div className={styles.Result_container_line2} />
       <div className={styles.Result_title}>

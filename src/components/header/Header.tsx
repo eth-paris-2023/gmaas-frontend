@@ -91,7 +91,15 @@ export default function Header() {
         onClick={() => router.push("/")}
       />
       <div className={styles.Header_buttons_box}>
-        <button className={styles.credit_button}>
+        <button
+          onClick={() => {
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: "smooth",
+            });
+          }}
+          className={styles.credit_button}
+        >
           BUY CREDITS
           <p>1 free credit left</p>
         </button>
@@ -119,7 +127,11 @@ export default function Header() {
                   <p onClick={() => disconnectWallet()}>Disconnect wallet</p>
                 </div>
               )}
-              <Image src={arrow} alt="arrow" style={{transform : openDropdown ? "rotate(180deg)" : ""}} />
+              <Image
+                src={arrow}
+                alt="arrow"
+                style={{ transform: openDropdown ? "rotate(180deg)" : "" }}
+              />
             </>
           )}
         </button>

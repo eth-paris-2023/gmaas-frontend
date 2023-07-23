@@ -1,11 +1,15 @@
 import Image from "next/image";
 import styles from "./Banner.module.css";
 import { info } from "@/assets";
-import { useState } from "react";
+import { useState, SetStateAction } from "react";
 
 const models = ["Model 1", "Model 2", "Model 3"];
 
-export default function Banner() {
+export default function Banner({
+  setVisibility,
+}: {
+  setVisibility: React.Dispatch<SetStateAction<boolean>>;
+}) {
   const [prompt, setPrompt] = useState("");
   return (
     <section className={styles.Banner_container}>
@@ -16,7 +20,7 @@ export default function Banner() {
             onChange={(e) => setPrompt(e.target.value)}
             placeholder="Write Your Prompt..."
           />
-          <button>Generate</button>
+          <button onClick={() => setVisibility(true)}>Generate</button>
         </div>
         <div className={styles.Banner_content_model_box}>
           <p className={styles.title}>Select a model:</p>
