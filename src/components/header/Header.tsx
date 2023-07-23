@@ -6,8 +6,8 @@ import { ethers } from "ethers";
 import { useDispatch, useSelector } from "react-redux";
 import { setAccount } from "@/redux/AppReducers/WalletReducer";
 import { RootState } from "@/redux/store";
-import { useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const CHAIN_ID_REQUIRED = 80001; //Mumbai
 
@@ -17,7 +17,7 @@ export default function Header() {
     (state: RootState) => state.walletReducer.account
   );
   const router = useRouter();
-  const pathName = usePathname();
+  const [openDropdown, setOpenDropdown] = useState(false);
 
   const connectWallet = async () => {
     if (window.ethereum) {
@@ -100,7 +100,7 @@ export default function Header() {
             if (!account) {
               connectWallet();
             } else {
-              router.push("/profile");
+              setOpenDropdown((prev) => !prev);
             }
           }}
           className={styles.connect_button}
@@ -113,15 +113,13 @@ export default function Header() {
             : "Connect Wallet"}
           {account && (
             <>
-              <p
-                onClick={(e) => {
-                  e.stopPropagation();
-                  disconnectWallet();
-                }}
-              >
-                Disconnect wallet
-              </p>
-              {pathName !== "/profile" && <Image src={arrow} alt="arrow" />}
+              {openDropdown && (
+                <div className={styles.dropDown}>
+                  <p onClick={() => router.push("/profile")}>My profile</p>
+                  <p onClick={() => disconnectWallet()}>Disconnect wallet</p>
+                </div>
+              )}
+              <Image src={arrow} alt="arrow" style={{transform : openDropdown ? "rotate(180deg)" : ""}} />
             </>
           )}
         </button>

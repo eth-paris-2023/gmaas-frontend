@@ -1,4 +1,4 @@
-import Gmaas from "./logo/Gmaas.svg";
+import Gmaas from "./logo/Gmaas.png";
 import info from "./icon/info.svg";
 import model1 from "./image/model1.png";
 import model2 from "./image/model2.png";
